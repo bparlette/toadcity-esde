@@ -1,7 +1,7 @@
 #!/bin/bash
 # Toad City Baltimore -> macOS + ES-DE installer (idempotent: safe to run again, e.g. to update).
 #
-#   curl -fsSL https://raw.githubusercontent.com/bparlette/Hawk/toadcity/desktop/install_mac.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/bparlette/toadcity-esde/main/install_mac.sh | bash
 #   or: bash install_mac.sh
 #
 # 1. Downloads the newest "desktop-v*" GitHub release of bparlette/Hawk (universal arm64+x64 app zip + ES-DE kit zip).
@@ -144,5 +144,5 @@ VERIFY
      xattr -l "$DST_APP" | grep -c quarantine || true          # -> 0
      open -W -a "$DST_APP"                                      # runs it without ES-DE
   If macOS still says the app is damaged or can't be opened:  xattr -dr com.apple.quarantine "$DST_APP"
-  Uninstall: bash uninstall_mac.sh  (or curl -fsSL https://raw.githubusercontent.com/$REPO/toadcity/desktop/uninstall_mac.sh | bash)
+  Uninstall: bash uninstall_mac.sh  (or curl -fsSL https://raw.githubusercontent.com/bparlette/toadcity-esde/main/uninstall_mac.sh | bash)
 EOF
