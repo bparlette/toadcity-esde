@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gameList>
+    <game>
+        <path>./Toad City Baltimore.toadcity</path>
+        <name>Toad City Baltimore</name>
+        <desc>Harold the cane-swinging toad and Mavis, purse at the ready, take back Baltimore's Inner Harbor block by block. Brawl street gangs from Harborplace to Fort McHenry, then beat each district boss at their own game: a home run derby at the ballpark, a crab-cake cook-off, a rhythm battle at the Power Plant, harbor races and more, while the B-More 410 radio plays Baltimore club. Cel-shaded 3D, built for a controller.
+
+Xbox controller: A jump, X/B swing, Y act, LB/RB camera, View map, Start pause. Quit back to ES-DE: hold View+Start (or Esc) for one second.</desc>
+        <releasedate>20261013T000000</releasedate>
+        <developer>Brad Parlette</developer>
+        <publisher>Brad Parlette</publisher>
+        <genre>Action / Beat 'em up</genre>
+        <players>1-4</players>
+    </game>
+</gameList>

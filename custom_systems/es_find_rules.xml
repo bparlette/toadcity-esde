@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- ES-DE custom find rules (macOS): ~/ES-DE/custom_systems/es_find_rules.xml
+     Tells ES-DE where the Toad City Baltimore app binary is (%EMULATOR_TOADCITY%). install_mac.sh merges the
+     TOADCITY emulator rule into an existing file instead of overwriting it. -->
+<ruleList>
+    <emulator name="TOADCITY">
+        <!-- Toad City Baltimore desktop app (Electron) -->
+        <rule type="staticpath">
+            <entry>/Applications/Toad City Baltimore.app/Contents/MacOS/Toad City Baltimore</entry>
+            <entry>~/Applications/Toad City Baltimore.app/Contents/MacOS/Toad City Baltimore</entry>
+            <entry>%HOME%/Applications/Toad City Baltimore.app/Contents/MacOS/Toad City Baltimore</entry>
+        </rule>
+    </emulator>
+</ruleList>

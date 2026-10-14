@@ -1,0 +1,8 @@
+#!/bin/bash
+# Toad City Baltimore: ES-DE "ROM" stub for the toadcity system.
+# With the default command ES-DE starts the app binary itself and this file is only the game entry.
+# With the alternative "open -W script" command ES-DE runs this file through bash: it opens the app and waits until it quits.
+APP="$HOME/Applications/Toad City Baltimore.app"
+[ -d "$APP" ] || APP="/Applications/Toad City Baltimore.app"
+[ -d "$APP" ] || APP="Toad City Baltimore"
+exec open -W -a "$APP"

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- ES-DE custom systems file (macOS): ~/ES-DE/custom_systems/es_systems.xml
+     Adds the "toadcity" system. install_mac.sh merges the toadcity system into an existing file instead of overwriting it.
+     Default command: runs the app binary directly (found by the TOADCITY find rule in es_find_rules.xml); ES-DE waits
+     for it to exit, so quitting the game returns to ES-DE.
+     Alternative (pick it per game or per system in ES-DE: Other settings > Alternative emulators): runs the ROM stub,
+     a tiny shell script that does `open -W -a "Toad City Baltimore"`. -->
+<systemList>
+    <system>
+        <name>toadcity</name>
+        <fullname>Toad City Baltimore</fullname>
+        <path>%ROMPATH%/toadcity</path>
+        <extension>.toadcity .TOADCITY</extension>
+        <command label="Toad City Baltimore (app)">%EMULATOR_TOADCITY% %ROM%</command>
+        <command label="Toad City Baltimore (open -W script)">%EMULATOR_OS-SHELL% %ROM%</command>
+        <platform>pc</platform>
+        <theme>ports</theme>
+    </system>
+</systemList>
